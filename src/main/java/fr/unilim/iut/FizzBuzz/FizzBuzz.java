@@ -1,12 +1,18 @@
 package fr.unilim.iut.FizzBuzz;
 
+import rules.Regle;
+import rules.RegleBuzz;
+import rules.RegleFizz;
+import rules.RegleFizzBuzz;
+
 public class FizzBuzz {
+	
+	Regle regleFizzBuzz = new RegleFizzBuzz();
+	Regle regleBuzz = new RegleBuzz();
+	Regle regleFizz = new RegleFizz();
 
 	public String donnerLaReponsePour(Integer nombre) {
 		
-		RegleFizzBuzz regleFizzBuzz = new RegleFizzBuzz();
-		RegleBuzz regleBuzz = new RegleBuzz();
-		RegleFizz regleFizz = new RegleFizz();
 		
 		if (regleFizzBuzz.estVerifieePar(nombre))
 			return regleFizzBuzz.valeurAAfficherSiRegleVerifiee();
